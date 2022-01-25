@@ -1,0 +1,42 @@
+@import "Variable";
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "mediaQuery";
+
+html,body
+{
+  min-height: 100%;
+  background: linear-gradient(70deg,#bdf33a,#70e1f5);
+}
+
+.textShadow
+{
+  text-shadow: -6px 7px 2px rgba(0,0,0,0.28);
+}
+
+.input
+{
+  border: none;
+  border-bottom: 2px solid white;
+  outline: none;
+  text-align: right;
+  background: $primary;
+}
+
+.Arrow
+{
+  border: none;
+  outline: none;
+  background: $primary;
+}
+
+.width
+{
+  width: 110%;
+}
+
+.forBorder
+{
+  border-right: none;
+}
+

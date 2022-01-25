@@ -1,0 +1,20 @@
+{
+  "name": "main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy":"gh-pages -d public",
+    "tw":"npx tailwindcss -i ./src/style.css -o ./public/style/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.0.15"
+  },
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}

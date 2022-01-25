@@ -1,0 +1,17 @@
+@include media-breakpoint-up(sm) {
+  .width
+  {
+    width: 90% !important;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .width
+  {
+    width: 90% !important;
+  }
+  .forBorder
+  {
+    border-right: 3px solid white !important;
+  }
+}
