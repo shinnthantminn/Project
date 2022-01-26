@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title><!--ကြည့်ထည့်လိုက်ဘရို-->
+
+    <!--for style-->
+    <link rel="stylesheet" href="style/style.css">
+
+    <!--for fontAwesome-->
+    <script src="https://kit.fontawesome.com/4a3d39f07f.js" crossorigin="anonymous"></script>
+</head>
+<body class="body">
+
+<div class="main">
+
+    <!--for nav-->
+
+    <nav id="mainMenu" class="flex z-20 flex-wrap items-center justify-between relative py-5">
+
+        <!-- brand -->
+
+        <a href="#" class="w-14">
+            <img src="../img/logon.png" alt="">
+        </a>
+
+        <!-- for menu icon -->
+
+        <a href="#" class="block lg:hidden" id="open">
+            <i class="fas fa-bars"></i>
+        </a>
+
+        <!-- for menu -->
+        <ul id="menu"  class="menu z-20 transform translate-x-[600px]">
+
+
+            <a href="#" class=" hidden lg:hidden" id="close">
+                <i class="fas fa-times"></i>
+            </a>
+
+            <li class="mb-5 mt-10 lg:mb-0 lg:mt-0"><a href="../index.html" class="">Home</a></li>
+            <li class="mb-5 lg:mb-0"><a href="./index.html" class="">News</a></li>
+            <li class="mb-5 lg:mb-0"><a href="../login/index.html" class="">Generate Tickets</a></li>
+            <li class="mb-5 lg:mb-0"><a href="" class="">About us</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!--for blur-->
+
+    <div id="blur" class="fixed top-0 duration-500 hidden z-10 left-0 bg-transparent backdrop-blur-md w-full h-full"></div>
+
+    <div class="w-full lg:w-[50%] mx-auto mt-20 md:mt-32">
+        <p class="capitalize text-center text-white text-2xl md:text-5xl mb-40 md:mb-52">this month's winner</p>
+        <p class="capitalize text-center text-white text-lg md:text-3xl">congratulations</p>
+    </div>
+</div>
+
+<script src="../script/app.js"></script>
+
+</body>
+</html>

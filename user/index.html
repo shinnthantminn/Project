@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title><!--ကြည့်ထည့်လိုက်ဘရို-->
+
+    <!--for style-->
+    <link rel="stylesheet" href="style/style.css">
+
+    <!--for fontAwesome-->
+    <script src="https://kit.fontawesome.com/4a3d39f07f.js" crossorigin="anonymous"></script>
+</head>
+<body class="body">
+
+<div class="main">
+
+    <!--for nav-->
+
+    <nav id="mainMenu" class="flex z-20 flex-wrap items-center justify-between relative py-5">
+
+        <!-- brand -->
+
+        <a href="#" class="w-14">
+            <img src="../img/logon.png" alt="">
+        </a>
+
+        <!-- for menu icon -->
+
+        <a href="#" class="block lg:hidden" id="open">
+            <i class="fas fa-bars"></i>
+        </a>
+
+        <!-- for menu -->
+        <ul id="menu"  class="menu z-20 transform translate-x-[600px]">
+
+
+            <a href="#" class=" hidden lg:hidden" id="close">
+                <i class="fas fa-times"></i>
+            </a>
+
+            <li class="mb-5 mt-10 lg:mb-0 lg:mt-0"><a href="../index.html" class="">Home</a></li>
+            <li class="mb-5 lg:mb-0"><a href="../News/index.html" class="">News</a></li>
+            <li class="mb-5 lg:mb-0"><a href="./index.html" class="">Generate Tickets</a></li>
+            <li class="mb-5 lg:mb-0"><a href="" class="">About us</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!--for blur-->
+
+    <div id="blur" class="fixed top-0 duration-500 hidden z-10 left-0 bg-transparent backdrop-blur-md w-full h-full"></div>
+
+    <div class="grid grid-cols-5">
+
+        <div class="col-span-5 lg:col-span-2 lg:border-r-2 border-white pt-16 xl:pb-40 2xl:pb-56">
+
+            <div class="w-[50%] mx-auto lg:mx-0 flex justify-center items-center flex-col">
+
+                <div class="w-[230px] h-[230px] bg-white rounded-[100%] mb-10">
+
+                </div>
+
+                <p class="text-2xl text-white tracking-wider mb-10">Username</p>
+                <p class="text-2xl text-white tracking-wider">User-ID</p>
+
+            </div>
+
+        </div>
+
+        <div class="col-span-5 lg:col-span-3 pl-0 lg:pl-24 xl:pl-40">
+
+            <div>
+
+                <h1 class="capitalize text-white text-[2em] text-center lg:text-left md:text-4xl ws mt-10 mb-12">your lucky numbers</h1>
+
+                <div class="flex space-x-10 mb-36 xl:mb-48 justify-center lg:justify-start">
+                
+                    <div class="number">1</div>
+                    <div class="number">10</div>
+                    <div class="number">999</div>
+                    <div class="number">10</div>
+
+                </div>
+
+                <a href="#" class="px-3 py-2 mb-20 md:mb-0 bg-white text-lime-500 duration-500 hover:text-lime-700 rounded-2xl text-2xl block w-fit mx-auto lg:inline">Generate</a>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<script src="../script/app.js"></script>
+
+</body>
+</html>
