@@ -64,6 +64,10 @@
   margin-bottom: 9rem;
 }
 
+.mb-20{
+  margin-bottom: 5rem;
+}
+
 .mt-20{
   margin-top: 5rem;
 }
@@ -92,12 +96,12 @@
   margin-bottom: 4rem;
 }
 
-.mb-20{
-  margin-bottom: 5rem;
-}
-
 .mb-48{
   margin-bottom: 12rem;
+}
+
+.ml-2{
+  margin-left: 0.5rem;
 }
 
 .block{
@@ -164,6 +168,12 @@
   width: 230px;
 }
 
+.w-fit{
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .w-16{
   width: 4rem;
 }
@@ -176,10 +186,12 @@
   width: 5rem;
 }
 
-.w-fit{
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+.w-52{
+  width: 13rem;
+}
+
+.w-\[25\%\]{
+  width: 25%;
 }
 
 .border-collapse{
@@ -311,6 +323,10 @@
   padding-top: 4rem;
 }
 
+.pl-0{
+  padding-left: 0px;
+}
+
 .pl-24{
   padding-left: 6rem;
 }
@@ -367,10 +383,6 @@
   padding-left: 2.5rem;
 }
 
-.pl-0{
-  padding-left: 0px;
-}
-
 .text-center{
   text-align: center;
 }
@@ -421,6 +433,11 @@
 .text-6xl{
   font-size: 3.75rem;
   line-height: 1;
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .capitalize{
@@ -1036,8 +1053,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .menu > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
-    margin-right: calc(5rem * var(--tw-space-x-reverse));
-    margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
+    margin-right: calc(3rem * var(--tw-space-x-reverse));
+    margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .menu{
@@ -1068,12 +1085,20 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 1280px){
   .menu > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
-    margin-right: calc(7rem * var(--tw-space-x-reverse));
-    margin-left: calc(7rem * calc(1 - var(--tw-space-x-reverse)));
+    margin-right: calc(3.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(3.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .menu{
     font-size: 25px;
+  }
+}
+
+@media (min-width: 1536px){
+  .menu > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(4rem * var(--tw-space-x-reverse));
+    margin-left: calc(4rem * calc(1 - var(--tw-space-x-reverse)));
   }
 }
 
@@ -1109,11 +1134,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-.hover\:text-lime-900:hover{
-  --tw-text-opacity: 1;
-  color: rgb(54 83 20 / var(--tw-text-opacity));
-}
-
 .hover\:text-lime-700:hover{
   --tw-text-opacity: 1;
   color: rgb(77 124 15 / var(--tw-text-opacity));
@@ -1122,6 +1142,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 768px){
   .md\:mb-0{
     margin-bottom: 0px;
+  }
+
+  .md\:ml-5{
+    margin-left: 1.25rem;
   }
 
   .md\:text-4xl{
@@ -1162,10 +1186,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:justify-start{
     justify-content: flex-start;
-  }
-
-  .lg\:justify-end{
-    justify-content: flex-end;
   }
 
   .lg\:border-r-2{

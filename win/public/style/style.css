@@ -35,6 +35,10 @@
   margin-right: auto;
 }
 
+.ml-2{
+  margin-left: 0.5rem;
+}
+
 .mb-5{
   margin-bottom: 1.25rem;
 }
@@ -47,16 +51,16 @@
   margin-top: 5rem;
 }
 
+.mb-40{
+  margin-bottom: 10rem;
+}
+
 .mt-32{
   margin-top: 8rem;
 }
 
 .mb-52{
   margin-bottom: 13rem;
-}
-
-.mb-40{
-  margin-bottom: 10rem;
 }
 
 .block{
@@ -83,12 +87,20 @@
   height: 100%;
 }
 
-.w-14{
-  width: 3.5rem;
+.w-52{
+  width: 13rem;
+}
+
+.w-\[25\%\]{
+  width: 25%;
 }
 
 .w-full{
   width: 100%;
+}
+
+.w-14{
+  width: 3.5rem;
 }
 
 .border-collapse{
@@ -137,9 +149,9 @@
   text-align: center;
 }
 
-.text-9xl{
-  font-size: 8rem;
-  line-height: 1;
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-2xl{
@@ -150,6 +162,11 @@
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-9xl{
+  font-size: 8rem;
+  line-height: 1;
 }
 
 .text-5xl{
@@ -767,8 +784,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .menu > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
-    margin-right: calc(5rem * var(--tw-space-x-reverse));
-    margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
+    margin-right: calc(3rem * var(--tw-space-x-reverse));
+    margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .menu{
@@ -799,8 +816,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 1280px){
   .menu > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
-    margin-right: calc(7rem * var(--tw-space-x-reverse));
-    margin-left: calc(7rem * calc(1 - var(--tw-space-x-reverse)));
+    margin-right: calc(3.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(3.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .menu{
@@ -808,7 +825,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+@media (min-width: 1536px){
+  .menu > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(4rem * var(--tw-space-x-reverse));
+    margin-left: calc(4rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+}
+
 @media (min-width: 768px){
+  .md\:ml-5{
+    margin-left: 1.25rem;
+  }
+
   .md\:mt-32{
     margin-top: 8rem;
   }
