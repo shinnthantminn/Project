@@ -1,115 +1,196 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>About</title>
 
     <!--for style-->
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/style.css" />
 
     <!--for icon-->
-    <script src="https://kit.fontawesome.com/4a3d39f07f.js" crossorigin="anonymous"></script>
-</head>
+    <script
+      src="https://kit.fontawesome.com/4a3d39f07f.js"
+      crossorigin="anonymous"
+    ></script>
 
-<body class="body">
+    <!-- for animation -->
+    <link rel="stylesheet" href="../vendor/animate.css" />
+  </head>
 
-<div class="main">
-    <!-- for nav -->
+  <body class="body">
+    <div class="main">
+      <!-- for nav -->
 
-    <nav id="mainMenu" class="flex z-20 flex-wrap items-center justify-between relative py-5">
-
+      <nav
+        id="mainMenu"
+        class="flex z-20 flex-wrap items-center justify-between relative py-5"
+      >
         <!-- brand -->
 
         <a href="#" class="w-52 flex items-center">
-            <img src="../img/logon.png" class="w-[25%]" alt="">
-            <h1 class="text-white text-sm ml-2 md:ml-5">Kiddo Tip-Time</h1>
+          <img src="../img/logon.png" class="w-[25%]" alt="" />
+          <h1 class="text-white text-sm ml-2 md:ml-5">Kiddo Tip-Time</h1>
         </a>
 
         <!-- for menu icon -->
 
         <a href="#" class="block lg:hidden" id="open">
-            <i class="fas fa-bars"></i>
+          <i class="fas fa-bars"></i>
         </a>
 
         <!-- for menu -->
-        <ul id="menu"  class="menu z-20 transform translate-x-[600px]">
+        <ul id="menu" class="menu z-20 transform translate-x-[600px]">
+          <a href="#" class="hidden lg:hidden" id="close">
+            <i class="fas fa-times"></i>
+          </a>
 
-
-            <a href="#" class=" hidden lg:hidden" id="close">
-                <i class="fas fa-times"></i>
-            </a>
-
-            <li class="mb-5 mt-10 lg:mb-0 lg:mt-0"><a href="../index.html" class="">Home</a></li>
-            <li class="mb-5 lg:mb-0"><a href="../News/news.html" class="">News</a></li>
-            <li class="mb-5 lg:mb-0"><a href="../login/login.html" class="">Generate Tickets</a></li>
-            <li class="mb-5 lg:mb-0"><a href="./about.html" class="">About us</a></li>
-
+          <li class="mb-5 mt-10 lg:mb-0 lg:mt-0">
+            <a href="../index.html" class="">Home</a>
+          </li>
+          <li class="mb-5 lg:mb-0">
+            <a href="../News/news.html" class="">News</a>
+          </li>
+          <li class="mb-5 lg:mb-0">
+            <a href="../login/login.html" class="">Generate Tickets</a>
+          </li>
+          <li class="mb-5 lg:mb-0">
+            <a href="./about.html" class="">About us</a>
+          </li>
         </ul>
+      </nav>
 
-    </nav>
+      <!-- for blur bg -->
+      <div
+        id="blur"
+        class="fixed top-0 duration-500 hidden z-10 left-0 bg-transparent backdrop-blur-md w-full h-full"
+      ></div>
 
-    <div class="mt-3">
-        <h1 class="text-3xl text-white mb-7 mt-2">Kiddo's Tip-Time</h1>
-        <p class="text-white text-xl wordSpacing">We have been founded since 2021, June.We are offering multiplatform and
-            various genres of betting services.
-            We also offer free Football and NBA tips for our customers.
-            Follow our page to get updated news about sports.
-            Life is too short, enjoy while you can.</p>
-    </div>
+      <div class="mt-3">
+        <h1 class="text-3xl text-white mt-2 wow animate__fadeIn animate__slow">
+          Kiddo's Tip-Time
+        </h1>
+        <p
+          class="text-white text-xl wordSpacing wow animate__fadeIn animate__slow"
+        >
+          We have been founded since 2021, June.We are offering multiplatform
+          and various genres of betting services. We also offer free Football
+          ,Esports and NBA tips for our customers. Follow our page to get
+          updated news about sports. Life is too short, enjoy while you can.
+        </p>
 
-    <div class="pb-20 2xl:pb-0">
-        <h1 class="text-2xl text-white mt-10">Our Team</h1>
+        <div class="space-x-1 my-6 wow animate__fadeIn animate__slow">
+          <a
+            href="https://www.facebook.com/KiddoTipTime"
+            class="text-white text-2xl"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="" class="text-white text-2xl">
+            <i class="fab fa-facebook-messenger"></i>
+          </a>
+          <a href="https://t.me/+FNiXPNVDvns0YTRl" class="text-white text-2xl">
+            <i class="fab fa-telegram"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="pb-20 2xl:pb-0">
+        <h1 class="text-2xl text-white wow animate__fadeIn animate__slow">
+          Our Team
+        </h1>
 
         <div class="flex justify-between flex-wrap">
+          <div
+            class="w-52 mx-auto sm:mx-0 sm:w-72 h-72 flex justify-center items-center wow animate__fadeIn animate__slow"
+          >
+            <a
+              href="https://www.facebook.com/profile.php?id=100015650534027"
+              class="w-44 h-44 bg-red-700 rounded-[100%] mx-auto"
+            >
+              <img src="../img/a.jpg" class="rounded-[100%]" alt="" />
+              <p class="text-white text-2xl text-center mt-5">Abby</p>
+            </a>
+          </div>
+          <div
+            class="w-52 mx-auto sm:mx-0 sm:w-72 h-72 flex justify-center items-center wow animate__fadeIn animate__slow"
+          >
+            <a
+              href="https://www.facebook.com/htooaung.kyaw.547"
+              class="w-44 h-44 bg-red-700 rounded-[100%] mx-auto"
+            >
+              <img src="../img/ACE7.jpg" class="rounded-[100%]" alt="" />
+              <p class="text-white text-2xl text-center mt-5">ACE7</p>
+            </a>
+          </div>
+          <div
+            class="w-52 mx-auto sm:mx-0 sm:w-72 h-72 flex justify-center items-center md:mx-0 wow animate__fadeIn animate__slow"
+          >
+            <a
+              href="https://www.facebook.com/AgentAK1xbet/"
+              class="w-44 h-44 bg-red-700 rounded-[100%] mx-auto"
+            >
+              <img src="../img/AK.jpg" class="rounded-[100%]" alt="" />
+              <p class="text-white text-2xl text-center mt-5">Agent AK</p>
+            </a>
+          </div>
 
-            <div class=" w-52 mx-auto sm:mx-0 sm:w-72 h-72 flex justify-center items-center ">
-                <a href="https://www.facebook.com/htooaung.kyaw.547" class="w-44 h-44 bg-red-700 rounded-[100%] mx-auto">
-                    <img src="../img/ACE7.jpg" class="rounded-[100%]" alt="">
-
-                    <p class="text-white text-2xl text-center mt-5">ACE7</p>
-                </a>
-            </div>
-            <div class=" w-52 mx-auto sm:mx-0 sm:w-72 h-72 flex justify-center items-center">
-                <a href="https://www.facebook.com/agent23loboki/" class="w-44 h-44 bg-red-700 rounded-[100%] mx-auto">
-                    <img src="../img/agent23.jpg" class="rounded-[100%]" alt="">
-                    <p class="text-white text-2xl text-center mt-5">Dennis</p>
-                </a>
-            </div>
-            <div class=" w-52 mx-auto sm:mx-0 sm:w-72 h-72 flex justify-center items-center md:mx-0">
-                <a href="https://www.facebook.com/AgentAK1xbet/" class="w-44 h-44 bg-red-700 rounded-[100%] mx-auto">
-                    <img src="../img/AK.jpg" class="rounded-[100%]" alt="">
-                    <p class="text-white text-2xl text-center mt-5">Agent AK</p>
-                </a>
-            </div>
-
-            <div class=" w-52 mx-auto sm:mx-0 sm:w-72 h-72 flex justify-center items-center">
-                <a href="https://www.facebook.com/AlphaA-Service-107711745096052/" class="w-44 h-44 bg-red-700 rounded-[100%] mx-auto">
-                    <img src="../img/Alpha.jpg" class="rounded-[100%]" alt="">
-                    <p class="text-white text-2xl text-center mt-5">Alpha</p>
-                </a>
-            </div>
-            <div class=" w-52 mx-auto sm:mx-0 sm:w-72 h-72 flex justify-center items-center 2xl:mx-auto">
-                <a href="https://www.facebook.com/profile.php?id=100074807948805" class="w-44 h-44 bg-red-700 rounded-[100%] mx-auto">
-                    <img src="../img/Marci.jpg" class="rounded-[100%]" alt="">
-                    <p class="text-white text-2xl text-center mt-5">Marci</p>
-                </a>
-            </div>
-            <div class=" w-52 mx-auto sm:mx-0 sm:w-72 h-72 flex justify-center items-center 2xl:mx-auto">
-                <a href="https://www.facebook.com/profile.php?id=100015650534027" class="w-44 h-44 bg-red-700 rounded-[100%] mx-auto">
-                    <img src="../img/zack.jpg" class="rounded-[100%]" alt="">
-                    <p class="text-white text-2xl text-center mt-5">Zack Spirit</p>
-                </a>
-            </div>
-
-
+          <div
+            class="w-52 mx-auto sm:mx-0 sm:w-72 h-72 flex justify-center items-center wow animate__fadeIn animate__slow"
+          >
+            <a
+              href="https://www.facebook.com/AlphaA-Service-107711745096052/"
+              class="w-44 h-44 bg-red-700 rounded-[100%] mx-auto"
+            >
+              <img src="../img/Alpha.jpg" class="rounded-[100%]" alt="" />
+              <p class="text-white text-2xl text-center mt-5">Alpha</p>
+            </a>
+          </div>
+          <div
+            class="w-52 mx-auto sm:mx-0 sm:w-72 h-72 flex justify-center items-center 2xl:mx-auto wow animate__fadeIn animate__slow"
+          >
+            <a
+              href="https://www.facebook.com/agent23loboki/"
+              class="w-44 h-44 bg-red-700 rounded-[100%] mx-auto"
+            >
+              <img src="../img/agent23.jpg" class="rounded-[100%]" alt="" />
+              <p class="text-white text-2xl text-center mt-5">Dennis</p>
+            </a>
+          </div>
+          <div
+            class="w-52 mx-auto sm:mx-0 sm:w-72 h-72 flex justify-center items-center 2xl:mx-auto wow animate__fadeIn animate__slow"
+          >
+            <a
+              href="https://www.facebook.com/marci1xbetservice"
+              class="w-44 h-44 bg-red-700 rounded-[100%] mx-auto"
+            >
+              <img src="../img/Marci.jpg" class="rounded-[100%]" alt="" />
+              <p class="text-white text-2xl text-center mt-5">Marci</p>
+            </a>
+          </div>
+          <div
+            class="w-52 mx-auto sm:w-72 h-72 flex justify-center flex-grow-0 items-center mx-auto 2xl:mx-auto wow animate__fadeIn animate__slow"
+          >
+            <a
+              href="https://www.facebook.com/profile.php?id=100015650534027"
+              class="w-44 h-44 bg-red-700 rounded-[100%] mx-auto"
+            >
+              <img src="../img/zack.jpg" class="rounded-[100%]" alt="" />
+              <p class="text-white text-2xl text-center mt-5">Zack Spirit</p>
+            </a>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-<!--for script-->
-<script src="../script/app.js"></script>
-</body>
+    <!--for wowjs-->
+    <script src="../vendor/wowjs/dist/wow.min.js"></script>
+
+    <!--for script-->
+    <script src="../script/app.js"></script>
+  </body>
 </html>
