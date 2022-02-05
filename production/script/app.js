@@ -1,37 +1,44 @@
-const Open = document.getElementById("open");
-const menu = document.querySelector("#menu");
-const Close = document.querySelector("#close");
-const blur = document.querySelector("#blur");
-const mainMenu = document.querySelector("#mainMenu");
-
+const Open = document.getElementById('open')
+const menu = document.querySelector('#menu')
+const Close = document.querySelector('#close')
+const blur = document.querySelector('#blur')
+const mainMenu = document.querySelector('#mainMenu')
 
 /* for menu */
 
-click(Open);
-click(Close);
-click(blur);
+click(Open)
+click(Close)
+click(blur)
 
 // for eventHandle
 function click(c) {
-    c.addEventListener("click",e=>{
-        e.preventDefault();
-        offcanvas(c);
-    });
+  c.addEventListener('click', (e) => {
+    e.preventDefault()
+    offcanvas(c)
+  })
 }
-
 
 // for hideShow
 function offcanvas(x) {
-    menu.classList.toggle("translate-x-[600px]");
-    menu.classList.toggle("translate-x-0");
+  menu.classList.toggle('translate-x-[600px]')
+  menu.classList.toggle('translate-x-0')
 
-    Open.classList.toggle("block");
-    Open.classList.toggle("hidden");
+  Open.classList.toggle('block')
+  Open.classList.toggle('hidden')
 
-    Close.classList.toggle("block");
-    Close.classList.toggle("hidden");
+  Close.classList.toggle('block')
+  Close.classList.toggle('hidden')
 
-    blur.classList.toggle("hidden");
+  blur.classList.toggle('hidden')
 }
 
-/* for waypoint */
+/* for wowJs */
+
+wow = new WOW({
+  boxClass: 'wow', // default
+  animateClass: 'animate__animated', // default
+  offset: 0, // default
+  mobile: true, // default
+  live: true, // default
+})
+wow.init()

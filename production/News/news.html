@@ -1,67 +1,105 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>News</title><!--ကြည့်ထည့်လိုက်ဘရို-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>News</title>
+    <!--ကြည့်ထည့်လိုက်ဘရို-->
 
     <!--for style-->
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style.css" />
+
+    <!-- for Animation -->
+    <link rel="stylesheet" href="../vendor/animate.css" />
 
     <!--for fontAwesome-->
-    <script src="https://kit.fontawesome.com/4a3d39f07f.js" crossorigin="anonymous"></script>
-</head>
-<body class="body">
+    <script
+      src="https://kit.fontawesome.com/4a3d39f07f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="body">
+    <div class="main">
+      <!--for nav-->
 
-<div class="main">
-
-    <!--for nav-->
-
-    <nav id="mainMenu" class="flex z-20 flex-wrap items-center justify-between relative py-5">
-
+      <nav
+        id="mainMenu"
+        class="flex z-20 flex-wrap items-center justify-between relative py-5"
+      >
         <!-- brand -->
 
         <a href="#" class="w-52 flex items-center">
-            <img src="../img/logon.png" class="w-[25%]" alt="">
-            <h1 class="text-white text-sm ml-2 md:ml-5">Kiddo Tip-Time</h1>
+          <img src="../img/logon.png" class="w-[25%]" alt="" />
+          <h1 class="text-white text-sm ml-2 md:ml-5">Kiddo Tip-Time</h1>
         </a>
 
         <!-- for menu icon -->
 
         <a href="#" class="block lg:hidden" id="open">
-            <i class="fas fa-bars"></i>
+          <i class="fas fa-bars"></i>
         </a>
 
         <!-- for menu -->
-        <ul id="menu"  class="menu z-20 transform translate-x-[600px]">
+        <ul id="menu" class="menu z-20 transform translate-x-[600px]">
+          <a href="#" class="hidden lg:hidden" id="close">
+            <i class="fas fa-times"></i>
+          </a>
 
-
-            <a href="#" class=" hidden lg:hidden" id="close">
-                <i class="fas fa-times"></i>
-            </a>
-
-            <li class="mb-5 mt-10 lg:mb-0 lg:mt-0"><a href="../index.html" class="">Home</a></li>
-            <li class="mb-5 lg:mb-0"><a href="./news.html" class="">News</a></li>
-            <li class="mb-5 lg:mb-0"><a href="../login/login.html" class="">Generate Tickets</a></li>
-            <li class="mb-5 lg:mb-0"><a href="../about/about.html" class="">About us</a></li>
-
+          <li class="mb-5 mt-10 lg:mb-0 lg:mt-0">
+            <a href="../index.html" class="">Home</a>
+          </li>
+          <li class="mb-5 lg:mb-0"><a href="./news.html" class="">News</a></li>
+          <li class="mb-5 lg:mb-0">
+            <a href="../login/login.html" class="">Generate Tickets</a>
+          </li>
+          <li class="mb-5 lg:mb-0">
+            <a href="../about/about.html" class="">About us</a>
+          </li>
         </ul>
+      </nav>
 
-    </nav>
+      <!--for blur-->
 
-    <!--for blur-->
+      <div
+        id="blur"
+        class="fixed top-0 duration-500 hidden z-10 left-0 bg-transparent backdrop-blur-md w-full h-full"
+      ></div>
 
-    <div id="blur" class="fixed top-0 duration-500 hidden z-10 left-0 bg-transparent backdrop-blur-md w-full h-full"></div>
+      <div
+        class="w-full lg:w-[50%] mx-auto mt-20 md:mt-32 space-y-16 md:space-y-20"
+      >
+        <p class="capitalize text-center text-white text-2xl md:text-5xl">
+          this month's winner
+        </p>
+        <p
+          class="text-center text-white text-xl md:text-2xl animate__animated animate__heartBeat animate__infinite animate__fast"
+        >
+          Shinn Thant Minn
+        </p>
+        <p class="capitalize text-center text-white text-lg md:text-3xl">
+          congratulations
+        </p>
+      </div>
 
-    <div class="w-full lg:w-[50%] mx-auto mt-20 md:mt-32">
-        <p class="capitalize text-center text-white text-2xl md:text-5xl mb-40 md:mb-52">this month's winner</p>
-        <p class="capitalize text-center text-white text-lg md:text-3xl">congratulations</p>
+      <footer
+        class="flex flex-col mt-[200px] lg:mt-[0px] xl:mt-[150px] 2xl:mt-[300px] justify-center items-center lg:block text-white"
+      >
+        <h1 class="">
+          All rights reserved 2022 &#169;
+        </h1>
+        <a
+          href="https://www.facebook.com/winnaing.kyaw.75248"
+          class="underline text-blue-800"
+        >
+          About
+        </a>
+      </footer>
     </div>
-</div>
 
-<script src="../script/app.js"></script>
-
-</body>
+    <script src="../script/app.js"></script>
+  </body>
 </html>
